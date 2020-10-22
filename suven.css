@@ -1,0 +1,220 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    background-color: black !important;
+  }
+  
+  .container {
+    position: relative;
+    height: auto;
+  }
+  
+  header {
+    height: 80px;
+  }
+.logo{
+    border-radius: 7px;
+    width:80px;
+    height:50px;
+}
+.navigation,.links_text,.links{
+    margin:0px;
+    padding:8px;
+    font-weight: bold;
+    color:black;
+    text-decoration: none;
+    list-style: none;
+}
+.links_text{
+    margin-top:13px;
+}
+a:hover{
+    color:lightgoldenrodyellow;
+}
+header,
+footer {
+  background: linear-gradient(-45deg, rgb(223, 245, 253), rgb(255, 240, 107), rgb(206, 255, 250), rgb(218, 165, 32));
+  background-size: 400% 400%;
+  animation: Gradient 20s ease infinite;
+}
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+header .bar {
+    width: fit-content;
+    height: 80px;
+    margin: -100px;
+    background: rgb(255, 255, 255);
+    opacity: 0.5;
+  }
+  
+  .navigation {
+    position: relative;
+    padding-bottom: 16px;
+    z-index: 2;
+  }
+  
+  .navigation,
+  .copyright {
+    overflow: hidden;
+  }
+  .navigation .logo {
+    width: 80px;
+    height: 50px;
+    float: left;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .navigation .links,
+  .copyright .links {
+    display: block;
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-align: center;
+    margin: 0px 25px 0px 25px;
+    float: left;
+  }
+  
+  .navigation .text {
+    margin: 12px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold
+  }
+  .text{
+      margin-top: 23px;
+      font-weight: bold;
+  }
+  
+  .navigation a.text:hover,
+  .copyright a.text:hover {
+    color: #3f3f3f;
+    border-bottom: none;
+    opacity: 0.5;
+  }
+  
+  .navigation a:active,
+  .copyright a:active {
+    color: white;
+    font-size: 20px;
+  }
+  #media-carousel-container {
+    margin: 10px 40px 40px 40px;
+  }
+  
+  #media-holder-action,
+  #media-holder-drama,
+  #media-holder-scifi {
+    clear: both;
+  }
+  
+  .popular-heading {
+    border-bottom: 1px solid white;
+    margin-top: 50px;
+  }
+  
+   #image-container-action,
+  #image-container-drama,
+  #image-container-scifi {
+    height: 200px;
+  }
+   
+  .media-carousel,
+  .media-carousel-movies {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 10px 5px;
+    float: left;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    text-align: center;
+  }
+  .logo{
+      border-radius: 6px;
+      box-shadow: 0px 7px 7px 0px rgba(0, 0, 0, 0.2);
+  }
+  .popular-heading h2{
+      color:white;
+  }
+  
+  .dropdown{
+      position:relative;
+      display:inline-block;
+  }
+ .dropdownbtn{
+     cursor:pointer;
+     text-decoration: none;
+     color:black;
+     background-color:rgb(245, 245, 46);
+     font-weight:bold;
+     position:absolute;
+     width:200px;
+     height:50px;
+     text-align: center;
+     border:1px solid black;
+     border-radius: 6px;
+     font-size:large;
+     padding:9px;
+     
+ }
+ .dropdowncontent{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index:1;
+  }
+  .dropdowncontent a {
+    color: black;
+    padding: 8px 16px;
+    text-decoration:none;
+    display: block;
+  }
+  
+  .dropdowncontent a:hover {background-color:rgb(245, 245, 46)}
+  
+  .dropdown:hover .dropdowncontent {
+    display: block;
+  }
+  
+  .dropdown:hover .dropdownbtn {
+    background-color:rgb(245, 245, 46);
+  }
+  .form-group{
+      margin-left: 185px;
+      
+  }
+  .form{
+      background-color:rgb(245, 245, 46) ;
+      width:1120px;
+      height:50px;
+      padding:10px;
+      border-radius: 6px;
+      text-align: center;
+  }
+ 
